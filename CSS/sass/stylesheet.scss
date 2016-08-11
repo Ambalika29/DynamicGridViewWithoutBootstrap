@@ -1,0 +1,135 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+*{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background: linear-gradient(45deg, #F2E6E6, #BDA1A1);
+}
+
+header{
+	width: 100%;
+	background: transparent;
+	text-align: center;
+	color: #796E6E;
+	font-size: 2rem;
+	padding: 20px;
+}
+
+.inputForm{
+	margin: 10px auto;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	input[type="text"]{
+		border:0;
+		border-bottom: 2px solid #796E6E;
+		border-right: 2px solid #796E6E;
+		border-radius: 10px;
+		background: transparent;
+		width: 100%;
+		padding: 5px;
+
+	}
+
+	button{
+		margin: 5px;
+		background-color: #796E6E;
+		align-self: flex-end;
+		color: white;
+		border: 0;
+		padding: 5px;
+	}
+}
+
+.buttonHolder{
+	margin: auto;
+}
+
+.gridContainerLayout{
+	width: 80%;
+	height: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: 0;
+	margin: 10px auto;
+	padding: 10px;
+	overflow: auto;
+
+	.gridItem{
+		min-width: 15%;
+		max-width: 15%;
+		min-height: 10%;
+		max-height: 10%;
+		background-color: white;
+		box-shadow:0 5px 5px 0 #888888;
+		padding:5px;
+		text-align: center;
+		margin: 10px;
+		display: flex;
+		flex: 1 0 auto;
+		// overflow: auto;
+		
+		.shortText{
+			display: none;
+		}
+
+		.longText{
+			display: block;
+		}
+	}
+}
+
+.listContainer {
+	@extend .gridContainerLayout;
+	flex-direction: column;
+
+	.listItem{
+		@extend .gridItem;
+		min-width: 100%;
+		text-align: left;
+		.shortText{
+			display: block;
+		}
+
+		.longText{
+			display: none;
+		}
+	}
+}
+
+
+.hide{
+	display:none;
+}
+
+@media (max-width: 600px){
+	.gridContainerLayout{
+		flex-direction: column;
+		.gridItem{
+			min-width: 100%;
+			text-align: left;
+			.shortText{
+				display: block;
+			}
+
+			.longText{
+				display: none;
+			}
+		}
+	}
+}

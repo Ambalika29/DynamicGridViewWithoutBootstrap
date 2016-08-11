@@ -1,0 +1,205 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/stylesheet.scss */
+* {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* line 12, ../sass/stylesheet.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 17, ../sass/stylesheet.scss */
+body {
+  background: linear-gradient(45deg, #F2E6E6, #BDA1A1);
+}
+
+/* line 21, ../sass/stylesheet.scss */
+header {
+  width: 100%;
+  background: transparent;
+  text-align: center;
+  color: #796E6E;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+/* line 30, ../sass/stylesheet.scss */
+.inputForm {
+  margin: 10px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+/* line 37, ../sass/stylesheet.scss */
+.inputForm input[type="text"] {
+  border: 0;
+  border-bottom: 2px solid #796E6E;
+  border-right: 2px solid #796E6E;
+  border-radius: 10px;
+  background: transparent;
+  width: 100%;
+  padding: 5px;
+}
+/* line 48, ../sass/stylesheet.scss */
+.inputForm button {
+  margin: 5px;
+  background-color: #796E6E;
+  align-self: flex-end;
+  color: white;
+  border: 0;
+  padding: 5px;
+}
+
+/* line 58, ../sass/stylesheet.scss */
+.buttonHolder {
+  margin: auto;
+}
+
+/* line 62, ../sass/stylesheet.scss */
+.gridContainerLayout, .listContainer {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 0;
+  margin: 10px auto;
+  padding: 10px;
+  overflow: auto;
+}
+/* line 73, ../sass/stylesheet.scss */
+.gridContainerLayout .gridItem, .listContainer .gridItem, .listContainer .listItem {
+  min-width: 15%;
+  max-width: 15%;
+  min-height: 10%;
+  max-height: 10%;
+  background-color: white;
+  box-shadow: 0 5px 5px 0 #888888;
+  padding: 5px;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex: 1 0 auto;
+}
+/* line 87, ../sass/stylesheet.scss */
+.gridContainerLayout .gridItem .shortText, .listContainer .gridItem .shortText, .listContainer .listItem .shortText {
+  display: none;
+}
+/* line 91, ../sass/stylesheet.scss */
+.gridContainerLayout .gridItem .longText, .listContainer .gridItem .longText, .listContainer .listItem .longText {
+  display: block;
+}
+
+/* line 97, ../sass/stylesheet.scss */
+.listContainer {
+  flex-direction: column;
+}
+/* line 101, ../sass/stylesheet.scss */
+.listContainer .listItem {
+  min-width: 100%;
+  text-align: left;
+}
+/* line 105, ../sass/stylesheet.scss */
+.listContainer .listItem .shortText {
+  display: block;
+}
+/* line 109, ../sass/stylesheet.scss */
+.listContainer .listItem .longText {
+  display: none;
+}
+
+/* line 116, ../sass/stylesheet.scss */
+.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  /* line 121, ../sass/stylesheet.scss */
+  .gridContainerLayout, .listContainer {
+    flex-direction: column;
+  }
+  /* line 123, ../sass/stylesheet.scss */
+  .gridContainerLayout .gridItem, .listContainer .gridItem, .listContainer .listItem {
+    min-width: 100%;
+    text-align: left;
+  }
+  /* line 126, ../sass/stylesheet.scss */
+  .gridContainerLayout .gridItem .shortText, .listContainer .gridItem .shortText, .listContainer .listItem .shortText {
+    display: block;
+  }
+  /* line 130, ../sass/stylesheet.scss */
+  .gridContainerLayout .gridItem .longText, .listContainer .gridItem .longText, .listContainer .listItem .longText {
+    display: none;
+  }
+}
